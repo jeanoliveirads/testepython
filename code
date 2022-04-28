@@ -1,0 +1,10 @@
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+x = np.random.randint(0, 50, 1000)
+y = 100 - x + np.random.normal(0, 5, 1000)
+
+print “A correlação entre (x e y) é : “, np.corrcoef(x, y)
+plt.scatter(x, y)
+plt.show()
